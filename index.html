@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+
+    <style>
+        .my-form {
+            border: 5px solid steelblue;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="my-form">
+            
+            <!--Pake garis bawah aja formnya-->
+            <h1 style="text-align: center;">Simple Form</h1>
+            <hr>
+            <br>
+        
+            <form action="#" method="#">
+
+                <!-- For Personal Details -->
+                <fieldset>
+                    <legend> <b>Personal Details</b> </legend>
+                    <table>
+                        <tr>
+                            <td><label>Name</label></td>
+                            <td> : </td>
+                            <td><input type="text" value="Ridwan Firdaus" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                            <td> : </td>
+                            <td><input type="email" value="ridwanfirdaus1098@gmail.com" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Phone</label></td>
+                            <td> : </td>
+                            <td><input type="tel" value="081299222538"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Address</label></td>
+                            <td> : </td>
+                            <td>
+                                <textarea rows="5" cols="50">
+                                    Perumahan Bumi Waringin Indah Blok C7 No.8 Rt.005/007
+                                    Kec. Kedungwaringin, Kab. Bekasi, Jawa Barat.
+                                </textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td> : </td>
+                            <td><input type="password" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Gender</label></td>
+                            <td> : </td>
+                            <td>
+                                <input type="radio" name="gender" value="Male" checked required> <label>Male</label>
+                                <input type="radio" name="gender" value="Female" required> <label>Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Date of Birth</label></td>
+                            <td> : </td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Age</label></td>
+                            <td> : </td>
+                            <td><input type="number" value="22"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br>
+
+                <!-- For Additional Information -->
+                <fieldset>
+                    <legend> <b>Additional Information</b> </legend>
+                    <table>
+                        <tr>
+                            <td><p>Degree</p></td>
+                            <td> : </td>
+                            <td>
+                            <select name="degree">
+                                <option>Junior High School</option>
+                                <option selected>Senior High School</option>
+                                <option>Diploma / Associate Degree</option>
+                                <option>Bachelor Degree</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Hobbies</p></td>
+                        <td> : </td>
+                        <td>
+                            <input type="checkbox" checked> Playing Badminton <br>
+                            <input type="checkbox" checked> Writing Poetry <br>
+                            <input type="checkbox" checked> Watching Anime <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Skill</p></td>
+                        <td> : </td>
+                        <td>
+                            Adobe Illustrator <input type="range" value="70"><br>
+                            Adobe Photoshop <input type="range" value="50"> <br>
+                            Adobe Premier <input type="range" value="65"> <br>
+                            Html <input type="range" value="50">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><p>Summary</p></td>
+                        <td> : </td>
+                        <td colspan="2">
+                            <textarea rows="7" cols="100">
+                                Saya Ridwan Firdaus lulusan SMKN 2 Cikarang Barat jurusan Multimedia.
+                                Lulus pada tahun 2017, dan saat ini saya sedang melanjutkan kuliah di 
+                                Universitas Esa Unggul yang berlokasi di Kebon Jeruk Jakarta Barat.
+                                Saya mengambil jurusan Teknik Informatika.
+                            </textarea>
+                        </td>
+                    </tr>
+                    </table>
+                 </fieldset>
+
+                <br>
+
+                <table align="center">
+                    <tr>
+                        <td>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+        </div>
+
+</body>
+</html>
